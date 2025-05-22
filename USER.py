@@ -1,5 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
+
+
 
 # In[2]:
 
@@ -21,11 +21,11 @@ collection = db['participants']
 # Fetch all documents
 data = list(collection.find())
 
-# Optional: remove MongoDB internal ID if you don't need it
+#  remove MongoDB internal ID 
 for d in data:
     d.pop('_id', None)
 
-# Convert to DataFrame
+# Converting to DataFrame
 df = pd.DataFrame(data)
 
 # Show the first few records

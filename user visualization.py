@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+
 # coding: utf-8
 
 # In[1]:
@@ -8,7 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-#  seaborn style for better visuals
+#  using seaborn style for better visuals
 sns.set(style="whitegrid")
 
 
@@ -62,7 +62,7 @@ sns.boxplot(
     y='Amount',
     hue='Gender',
     palette={'Male': 'blue', 'Female': 'red'},
-    showfliers=False  # hide extreme outliers for clarity
+    showfliers=False  # hiding extreme outliers for clarity
 )
 plt.title('Gender Distribution Across Spending Categories')
 plt.ylabel('Amount Spent')
